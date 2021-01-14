@@ -1,5 +1,5 @@
 
-# API-QuickStart-project [![Build Status](https://travis-ci.com/mads-XD-kristensen/programm-eksamen-3-sem.svg?branch=main)](https://travis-ci.com/mads-XD-kristensen/programm-eksamen-3-sem)
+# API-QuickStart-project [![Build Status](https://travis-ci.com/mads-XD-kristensen/programm-eksamen-3-sem.svg?branch=master)](https://travis-ci.com/mads-XD-kristensen/programm-eksamen-3-sem)
 
 ## Backend setup
 for at opsætte start koden skal der gøres det samme som for den udleveret start koden som ses i dette link
