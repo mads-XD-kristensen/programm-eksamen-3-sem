@@ -1,12 +1,30 @@
 import { handleHttpErrors, makeOptions } from "../utils/fetchUtils";
-import { jokeURL as url } from "../utils/settings";
+import { jokeURL, hotelsEndpointURL } from "../utils/settings";
 
-function jokeFetcher() {
-  const fetchData = () => {
-    const options = makeOptions("GET", true);
-    return fetch(url, options).then(handleHttpErrors);
-  };
-  return { fetchData };
+function fetchFacade() {
+
+
+  function jokeFetcher() {
+    const fetchData = () => {
+      const options = makeOptions("GET", true);
+      return fetch(jokeURL, options).then(handleHttpErrors);
+    };
+    return { fetchData };
+  }
+
+  function hotelFetcher() {
+    const fetchData = () => {
+      const options = makeOptions("GET", true);
+      return fetch(hotelsEndpointURL, options).then(handleHttpErrors);
+    }
+    return { fetchData };
+  }
+
+  return {
+    jokeFetcher,
+    hotelFetcher,
+  }
+
 }
-const facade = jokeFetcher();
+const facade = fetchFacade;
 export default facade;

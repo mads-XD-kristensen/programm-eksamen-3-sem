@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 export default function Jokes() {
   const [dataFromServer, setDataFromServer] = useState({ isEmpty: true });
   useEffect(() => {
-    facade.fetchData().then((data) => setDataFromServer(data));
+    facade().jokeFetcher().fetchData().then((data) => setDataFromServer(data));
   }, []);
 
   return (

@@ -1,7 +1,7 @@
 import login from "./components/Login";
 import jokes from "./components/Jokes";
 import signup from "./components/Signup";
-import home from './components/Home'
+import home from './components/Home';
 
 
 export const Login = login;
